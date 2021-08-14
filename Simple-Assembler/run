@@ -1,0 +1,5 @@
+#!/bin/bash
+
+javac Simple_Assembler.java
+
+java Simple_Assembler
