@@ -1,4 +1,7 @@
 #!/bin/bash
 
 # Add command to run your program here
-echo "Hello World"
+
+javac Simple_Simulator.java
+
+java Simple_Simulator

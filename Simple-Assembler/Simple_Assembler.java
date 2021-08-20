@@ -82,9 +82,11 @@ public class Simple_Assembler{
             c++;
             output.println(line);
         }
+
         input.close();
         data = c;
         output.close();
+        
         Scanner sc = new Scanner(outputFile);
 
         Print(sc);
