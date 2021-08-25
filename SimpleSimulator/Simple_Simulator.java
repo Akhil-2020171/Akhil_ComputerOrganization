@@ -88,6 +88,7 @@ public class Simple_Simulator{
             output.println(line);
         }
         data = c;
+
         input.close();
         output.close();
 
@@ -96,6 +97,7 @@ public class Simple_Simulator{
 
         MultiplePrint(scan1);
         SinglePrint(scan2);
+        plot();
         scan1.close();
         scan2.close();
 
@@ -406,6 +408,13 @@ public class Simple_Simulator{
             String line = "0000000000000000";
             System.out.println(line);
         }
+    }
+
+    private static void plot() throws IOException{
+        File New = new File("New_Output.txt");
+        PrintWriter plot = new PrintWriter(New);
+        plot.println(data);
+        plot.close();
     }
 }
 
